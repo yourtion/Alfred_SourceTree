@@ -3,10 +3,12 @@
 
 from biplist import *
 import json
+import os
 
 class SourceTree:
 
-  filePath="/Users/Yourtion/Library/Application Support/SourceTree/browser.plist"
+  homePath=os.path.expanduser('~')
+  filePath= homePath + "/Library/Application Support/SourceTree/browser.plist"
 
   def _getProjects(self):
     try:
