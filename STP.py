@@ -1,12 +1,11 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*- 
-
 from biplist import *
 import json
+import os
 
 class SourceTree:
 
-  filePath="/Users/Yourtion/Library/Application Support/SourceTree/browser.plist"
+  filePath = os.path.expanduser('~') + "/Library/Application Support/SourceTree/browser.plist"
 
   def _getProjects(self):
     try:
