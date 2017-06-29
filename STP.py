@@ -1,6 +1,4 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*- 
-
 from biplist import *
 import json
 import os

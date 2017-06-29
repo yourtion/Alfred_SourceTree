@@ -1,7 +1,15 @@
-# Alfred_SourceTree
+# Alfred Sourcetree
 
-Fast launch project in SourceTree
+Alfred workflow to quickly find and launch your SourceTree bookmarks.
 
-## ScreenShot
+## Requirements
 
-![ScreenShot](ScreenShot/ScreenShot.png)
+* Alfred 3
+* Python
+* [SourceTree](sourcetreeapp.com)
+
+## Usage
+
+Type <kbd>st</kbd> to list all your SourceTree bookmarks and start typing to filter the results.
+
+![Screenshot](screenshot.png)

@@ -38,7 +38,7 @@
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>keyword</key>
@@ -52,7 +52,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>Loading bookmarks...</string>
 				<key>script</key>
 				<string>from STP import SourceTree
 
@@ -62,9 +62,9 @@ SourceTree().getList()</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>Browse</string>
 				<key>title</key>
-				<string>Quick open project in SourceTree</string>
+				<string>SourceTree</string>
 				<key>type</key>
 				<integer>3</integer>
 				<key>withspace</key>
