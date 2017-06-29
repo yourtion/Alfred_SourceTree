@@ -37,6 +37,8 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -113,6 +115,6 @@ SourceTree().getList()</string>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/yourtion/Alfred_SourceTree</string>
 </dict>
 </plist>
