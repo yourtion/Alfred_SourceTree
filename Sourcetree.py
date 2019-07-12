@@ -1,8 +1,10 @@
-#!/usr/bin/python
-from biplist import *
-import json
+# encoding: utf-8
+import sys
 import os
 import re
+from workflow import Workflow3
+
+log = None
 
 class SourceTree:
 
@@ -22,7 +24,8 @@ class SourceTree:
         res.append(n)
     return ' '.join(res);
 
-  def _getProjects(self):
+  def getProjects(self):
+    from biplist import readPlist
     try:
       plist = readPlist(self.filePath)
       tempName = ""
@@ -35,17 +38,24 @@ class SourceTree:
       return res
     except e:
       return []
+    
 
-  def getList(self):
-    items = []
-    projects = self._getProjects()
+def main(wf):
+    projects = SourceTree().getProjects()
+    query = None
+    if len(wf.args):
+      query = wf.args[0]
+    projects = wf.filter(query, projects, lambda project: project[0])
     for p in projects:
-      item = {
-        'title': p[0],
-        'subtitle': p[1],
-        'arg': p[1],
-        'match': self._splitMatchWords(p[0])
-      }
-      items.append(item)
-    result = {'items': items}
-    print(json.dumps(result))
+      wf.add_item(
+        title=p[0],
+        subtitle=p[1],
+        arg=p[1],
+        valid=True
+      )
+    wf.send_feedback()
+
+if __name__ == u"__main__":
+    wf = Workflow3(libraries=['./lib'])
+    log = wf.logger
+    sys.exit(wf.run(main))

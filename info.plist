@@ -8,11 +8,11 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>081FF2F4-E464-47C1-8577-591660EF42D7</key>
+		<key>954D7161-3A14-4B87-83BF-2068ABEFC735</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>BE29D535-9447-4340-914B-F8969DD4312D</string>
+				<string>BEF99F44-9F28-4E71-B805-CE12A0D5172D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -35,14 +35,31 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string>/Applications/SourceTree.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>BEF99F44-9F28-4E71-B805-CE12A0D5172D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
-				<true/>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>st</string>
 				<key>queuedelaycustom</key>
@@ -54,67 +71,50 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Loading bookmarks...</string>
+				<string></string>
 				<key>script</key>
-				<string>from STP import SourceTree
-
-SourceTree().getList()</string>
+				<string>python Sourcetree.py {query}</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Browse</string>
+				<string></string>
 				<key>title</key>
-				<string>SourceTree</string>
+				<string></string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>081FF2F4-E464-47C1-8577-591660EF42D7</string>
+			<string>954D7161-3A14-4B87-83BF-2068ABEFC735</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string>/Applications/SourceTree.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>BE29D535-9447-4340-914B-F8969DD4312D</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>081FF2F4-E464-47C1-8577-591660EF42D7</key>
+		<key>954D7161-3A14-4B87-83BF-2068ABEFC735</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>90</integer>
 		</dict>
-		<key>BE29D535-9447-4340-914B-F8969DD4312D</key>
+		<key>BEF99F44-9F28-4E71-B805-CE12A0D5172D</key>
 		<dict>
 			<key>xpos</key>
 			<integer>290</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>90</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>https://github.com/yourtion/Alfred_SourceTree</string>
+	<string>https://github.com/matthewmcgarvey/Alfred_SourceTree</string>
 </dict>
 </plist>
