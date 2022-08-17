@@ -14,7 +14,7 @@ class SourceTree:
     return [m.group(0) for m in matches]
 
   def _splitMatchWords(self, title):
-    res = []
+    res = [title]
     cam = self._camel_case_split(title)
     for m in cam:
       ret = re.split('-|_| |',m)
